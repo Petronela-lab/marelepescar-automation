@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class WebTablePage {
     private final WebDriver driver;
 
-    private final By tableLocator = By.cssSelector("selector-pentru-tabel"); // pune selectorul corect
+    private final By tableLocator = By.cssSelector("selector-pentru-tabel");
 
     public WebTablePage(WebDriver driver) {
         this.driver = driver;

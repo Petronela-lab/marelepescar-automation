@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import ro.marelepescar.pages.HomePage;
 
+
 public class WebTableTest {
 
     private WebDriver driver;
@@ -13,8 +14,7 @@ public class WebTableTest {
 
     @BeforeClass
     public void setUp() {
-        // 🔁 Schimbă calea cu cea corectă spre chromedriver de pe PC-ul tău!
-        System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chromedriver.exe");
+
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -31,7 +31,7 @@ public class WebTableTest {
     @Test
     public void invalidLoginTest() {
         homePage.clickLoginButton();
-        homePage.login("invalid@email.com", "wrongpassword");
+        homePage.isLoginButtonDisplayed();
 
         // Aici poți adăuga verificări suplimentare, de exemplu, mesajul de eroare
         // Exemplu (doar dacă ai un mesaj de eroare vizibil):

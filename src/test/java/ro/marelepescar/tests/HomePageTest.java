@@ -23,7 +23,6 @@ public class HomePageTest {
         // Inițializezi raportul
         extent = ReportManager.getExtentReports();
 
-        System.setProperty("webdriver.chrome.driver", "C:\\calea\\catre\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://adresa-ta.com");
